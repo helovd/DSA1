@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando a Tela para Desenvolvedor</title>
+
+    <style>
+        /* Configuração geral de toda tela */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        /* Estilo Block */
+        .info {
+            background-color: aqua;
+            padding: 10px;
+            margin: 20px;
+        }
+
+        /* Estilo inline */
+        /* Observe que o span não tem "." por ser tag*/
+        span {
+            background-color: yellow;
+            color: red;
+        }
+
+        /* Estilo inline-block */
+        .inlineblock {
+            display: inline-block;
+            /* largura */
+            width: 100px;
+            /* altura */
+            height: 50px;
+            background-color: lightgreen;
+            text-align: center;
+            /* altura da linha dentro do box */
+            line-height: 50px;
+            margin-left: 5px;
+        }
+
+        /* Estilo inline */
+        .inline {
+            display: inline;
+            /* largura */
+            width: 100px;
+            /* altura */
+            height: 50px;
+            background-color: lightgreen;
+            text-align: center;
+            /* altura da linha dentro do box */
+            line-height: 50px;
+            margin-left: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Verifique as Configurações dessa tag com o inspecionar do Desenvolvedor</h1>
+    <h1><span> Clique com o botão direito do mouse e Inspecionar</span></h1>
+
+    <!-- Block -->
+    <div class="info"> Eu sou um elemento block!</div>
+    <div class="info"> Também sou block e ocupo toda a largura disponível.</div>
+
+    <!-- Span in-line -->
+    <p>Esse é um texto normal, e <span>isto é um span inline</span>,
+        veja como ele não quebra a linha, ele ocupa somente o tamaho do texto.</p>
+    <br>
+    <hr>
+
+    <h2>Modificamos o display de block para os atributos abaixo:</h2>
+    <h2>Inline-Block - é possível alterar a largura e altura</h2>
+    <div class="inlineblock">Caixa 1</div>
+    <div class="inlineblock">Caixa 2</div>
+    <div class="inlineblock">Caixa 3</div>
+
+    <br><br>
+    <h2>Inline - Não é possível alterar a largura e altura</h2>
+    <h2>Observe que são as mesmas configurações da caixa acima alterado para inline, parece o span</h2>
+    <div class="inline">Caixa 1</div>
+    <div class="inline">Caixa 2</div>
+    <div class="inline">Caixa 3</div>
+
+</body>
+
+</html>

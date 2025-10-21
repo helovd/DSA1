@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Position Relative</title>
+
+    <style>
+        .relative {
+            background-color: yellow;
+            border: 3px solid black;
+            width: 300px;
+            height: 300px;
+            position: relative;
+            top: 70px;
+            left: 500px;
+        }
+
+        .absolute {
+            background-color: aqua;
+            width: 150px;
+            height: 150px;
+            border: 3px solid black;
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+    <p>Oi</p>
+    <!-- Observe quem é o pai e o filho:
+     O pai é relative se e somente se o absolute estiver dentro dele
+     retire o absolute para fora e teste -->
+    <div class="relative">
+        Posição Relative Amarelo
+        <div class="absolute">Posição Absoluta Azul</div>
+    </div>
+
+    <p>Tchau</p>
+
+</body>
+
+</html>

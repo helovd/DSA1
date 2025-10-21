@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores na web</title>
+
+    <style>
+        h1,
+        #nome {
+            color: red;
+        }
+
+        h2,
+        #hexa {
+            color: #ff0000;
+            /* 0 1 2 ... 9 a b c d e f */
+        }
+
+        h3,
+        #rgb {
+            color: rgb(255, 0, 0);
+        }
+
+        h4,
+        #rgba {
+            color: rgba(255, 0, 0, 0.1);
+            /* Alpha 0.0, 0,1 até 1.0 */
+        }
+
+        h5,
+        #grad {
+            /* Da esquerda para direita */
+            background-image: linear-gradient(to right, red, green, blue);
+            color: #ffff;
+        }
+
+        h6,
+        #grad {
+            /* Da esquerda para direita */
+            /* De cima para direita */
+            height: 7rem;
+            background-image: linear-gradient(to bottom right, red, yellow, white, aqua, violet);
+            color: black;
+        }
+
+        #radial {
+            text-align: center;
+            height: 100px;
+            width: 100px;
+            background-image: radial-gradient(red, yellow, white);
+        }
+
+        #conico {
+            color: white;
+            text-align: center;
+            height: 100px;
+            width: 100px;
+            background-image: conic-gradient(red, yellow, green, blue, black);
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+    <h1>Usando parágrafo</h1>
+    <p style="color: red;">Cor por Nome</p>
+    <p style="color: #f00;">Cor por Hexadecimal</p>
+    <p style="color: rgb(255, 0, 0);">Cor por RGB</p>
+    <p style="color: rgba(241, 140, 140, 0.55);">Cor por RGBA</p>
+    <p style="background-image: linear-gradient(to right, red, green, blue);">Cor por Gradiente</p>
+
+
+    <hr size="5px" color="black">
+    <h1>Usando div</h1>
+    <div id="nome">Cor por Nome</div>
+    <div id="hexa">Cor por Hexadecimal</div>
+    <div id="rgb">Cor por RGB</div>
+    <div id="rgba">Cor por RGBA</div>
+    <div id="grad">Cor por Gradiente</div>
+
+    <hr size="5px" color="black">
+
+    <h1>Usando títulos</h1>
+    <h1>Cor por Nome</h1>
+    <h2>Cor por Hexadecimal</h2>
+    <h3>Cor por RGB</h3>
+    <h4>Cor por RGBA</h4>
+    <h5>Cor por Gradiente Linear</h5>
+    <H6>Cor por Gradiente Diagonal</H6>
+
+    <hr size="5px" color="black">
+    <div id="radial">RADIAL</div>
+
+    <hr size="5px" color="black">
+    <div id="conico">CONICO</div>
+
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iserir Linha Horizontal</title>
+
+    <style>
+        .textoComStyle {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        .linha1 {
+            /* alinhamento a esquerda */
+            background-color: red;
+            width: 80%;
+            height: 9px;
+            margin-left: 0px;
+        }
+
+        .linha2 {
+            margin-right: 0px;
+            background-color: blue;
+            width: 80%;
+            height: 9px;
+        }
+
+        .linha3 {
+            /* Padrão centralizado */
+            background-color: gray;
+            width: 80%;
+            height: 9px;
+        }
+
+        .linha4 {
+            border: black solid 0.2em;
+            width: 80%;
+            border-radius: 100%;
+        }
+    </style>
+</head>
+
+
+<body>
+    <h2>
+        <p>Minha Página HTML</p>
+    </h2>
+
+    <p>
+        <i>Primeiro parágrafo</i> <b>linha 1</b><br>
+        <i>Primeiro parágrafo</i> <b>linha 2</b><br>
+    </p>
+
+    <hr class="linha" size="9" width="80%" color="red" align="left" />
+
+    <p>
+        <i>Segundo parágrafo</i> <b>linha 1</b><br>
+        <i>Segundo parágrafo</i> <b>linha 2</b><br>
+        <i>Segundo parágrafo</i> <b>linha 3</b><br>
+    </p>
+
+    <hr size="9" width="80%" color="blue" align="right" />
+
+    <p>
+        <i>Terceiro páragrafo</i> <b>linha 1</b><br>
+        <i>Terceiro páragrafo</i> <b>linha 2</b><br>
+        <i>Terceiro páragrafo</i> <b>linha 3</b><br><br><br>
+        <i>Terceiro páragrafo</i> <b>linha 6</b><br>
+    </p>
+
+    <hr size="9" width="80%" color="gray" align="center" />
+
+    <br><br>
+    <h1 class="textoComStyle">hr Usando Estilo </h1>
+    <hr class="linha1"> <br>
+    <hr class="linha2"> <br>
+    <hr class="linha3"> <br>
+    <hr class="linha4"> <br>
+
+
+</body>
+
+</html>

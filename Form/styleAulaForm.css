@@ -1,0 +1,103 @@
+@import url('https: //fonts.googleapis.com/css2?family=Macondo&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(71, 116, 143);
+}
+
+.legend {
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.caixaCabecalho {
+    font-family: "Macondo", cursive;
+    background-color: rgb(125, 200, 219);
+    padding: 5px;
+    text-align: center;
+    font-size: 1.5em;
+    width: 400px;
+    margin: 15px auto;
+    color: red;
+    border-radius: 20px;
+}
+
+.caixaMain {
+    background-color: rgb(125, 200, 219);
+    border-radius: 10px;
+    width: 600px;
+    margin: 0 auto;
+    font-size: 26px;
+    padding: 10px;
+}
+
+.inputBase {
+    color: red;
+    width: 90%;
+    font-size: 20px;
+    margin: 0 20px;
+}
+
+.estado {
+    color: red;
+    width: 10%;
+    font-size: 18px;
+}
+
+.estadoLabel,
+.hora-desejada {
+    color: rgb(128, 128, 128);
+    width: 10%;
+    font-size: 20px;
+    margin: 0 0 0 20px;
+}
+
+.inputNumber {
+    color: red;
+    width: 35%;
+    font-size: 20px;
+    margin: 0 20px;
+}
+
+.input_data {
+    color: blue;
+    width: 25%;
+    font-size: 20px;
+    margin: 0 20px;
+}
+
+.color {
+    margin: 0 20px;
+    width: 20%;
+}
+
+.inputCkb {
+    font-size: 70px;
+    margin: 0 20px;
+}
+
+.btn_radio {
+    margin: 0 20px;
+}
+
+/* Não permite que a area de texto não seja redimencionado */
+textarea#msg {
+    resize: none;
+}
+
+.msg {
+    color: red;
+    font-size: 25px;
+    margin: 0 0 20px 20px;
+    font-weight: bold;
+}
+
+.botoes {
+    font-size: 25px;
+    margin: 0 20px;
+}
