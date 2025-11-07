@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Lista Ordenada</title>
+
+    <style>
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Turmas</h3>
+    <ol>
+        <li>MIF1AN</li>
+        <li>MIF2AN</li>
+        <li>MIF3AN</li>
+    </ol>
+    <hr>
+    <h2>Subitem</h2>
+    <h3>Turmas</h3>
+    <ol>
+        <li>MIF1AN</li>
+
+        <ol start="10">
+            <li><b class="red">DSA1</b></li>
+
+            <ol type="a" reversed>
+                <li>JavaScript</li>
+                <li>Css</li>
+                <li>HTML</li>
+            </ol>
+        </ol>
+
+        <ol start="20">
+            <li><b class="red">EMPR</b></li>
+
+            <ol type="a">
+                <li>Empreendedorismo</li>
+                <li>Empreendedores</li>
+                <li>Sebrae</li>
+            </ol>
+        </ol>
+
+        <br>
+
+        <li>MIF2AN</li>
+
+        <br>
+
+        <li>MIF3AN</li>
+    </ol>
+
+</body>
+
+</html>

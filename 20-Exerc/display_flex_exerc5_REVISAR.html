@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display_flex_exerc5</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 80px;
+            color: white;
+            background-color: rgb(66, 107, 32);
+            font-size: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 40px;
+            font-size: 10px;
+            background-color: gray;
+            color: white;
+        }
+
+        main {
+            display: flex;
+            flex: 1;
+            justify-content: center;
+            align-items: flex-start;
+            font-size: 10px;
+            height: 35px;
+        }
+
+        article {
+            display: flex;
+            flex: 2;
+            flex-direction: column;
+            height: 600px;
+            width: 500px;
+            justify-content: flex-start;
+            padding: 10px;
+            margin: 10px;
+            align-items: flex-start;
+            background-color: rgb(255, 199, 95);
+        }
+
+        /* REVISAR SECTION, O TAMANHO DO CONTAINER NÃO ESTÁ FLEX???  */
+        section {
+            justify-content: stretch;
+            align-items: flex-start;
+            padding: 10px;
+            margin: 10px;
+            /* height: 110px;
+            width: 900px;  */
+            background-color: rgb(139, 150, 38);
+        }
+
+        aside {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            padding: 10px;
+            height: 600px;
+            width: 500px;
+            justify-content: flex-start;
+            align-items: flex-start;
+            background-color: aqua;
+        }
+
+        .doarticle {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        footer {
+            position: sticky;
+            align-content: flex-end;
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+    </style>
+
+
+</head>
+
+
+<body>
+    <header>
+        <h1>Header</h1>
+        <p>Área superior do site</p>
+    </header>
+
+    <nav>
+        <h1>nav</h1>
+        <a href="">Link 1</a>
+        <a href="">Link 2</a>
+        <a href="">Link 3</a>
+    </nav>
+
+    <main>
+        <h2><b>Main ==> Toda área em Branco</b></h2>
+    </main>
+
+    <div class="doarticle">
+
+        <article>
+            <h1>Article</h1>
+            <p>Conteúdo principal do site.</p>
+
+            <section>
+                <h2>Section</h2>
+                <p>Parte da Article organizada em uma seção.</p>
+            </section>
+
+            <section>
+                <h2>Section</h2>
+                <p>Outra section.</p>
+            </section>
+
+        </article>
+
+        <aside>
+            <h1>Aside</h1>
+            <p>Conteúdo complementar como links, anúncios ou widgets.</p>
+        </aside>
+
+    </div>
+
+
+    <footer>
+        Footer = Rodapé do site
+    </footer>
+
+
+
+</body>
+
+</html>

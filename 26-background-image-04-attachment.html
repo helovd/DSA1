@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Imagem - 04</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            text-align: justify;
+            margin: 0 260px;
+        }
+
+        span {
+            font-size: 2em;
+        }
+
+        body {
+            background-color: rgba(255, 166, 0, 0.5);
+            background-image: url(data:image/png;base64,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);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center right;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, dolorum officiis iste mollitia earum
+            voluptatum adipisci dolorem aliquid, quos repudiandae vitae molestias repellendus possimus! Cumque ea
+            debitis dolores laudantium sapiente.
+            Cum neque ducimus delectus veniam natus nobis assumenda? A laudantium eaque aperiam nemo magnam optio
+            voluptatum commodi? Corrupti, laboriosam eum, rem culpa quaerat unde voluptate, ea ipsa at optio autem!
+            Esse ex reiciendis quisquam illo eius aperiam unde, deserunt sint! Reprehenderit voluptas eaque dolorum
+            dolores enim qui placeat, obcaecati impedit cum nobis quaerat quam deleniti labore unde libero voluptatibus
+            temporibus?
+            Itaque, quo. Dolor quo adipisci aliquam, debitis ipsum consequuntur ratione numquam assumenda velit fugiat
+            voluptatibus eligendi sit. Soluta debitis unde possimus. Inventore ad quae, obcaecati aliquam esse iste
+            reiciendis voluptas.
+            Illo, natus nam! Sapiente laudantium voluptatibus consequuntur cum nihil necessitatibus, consectetur
+            repudiandae voluptate fugit nostrum blanditiis voluptatem reprehenderit deleniti neque officiis ducimus
+            dicta aspernatur quisquam excepturi expedita! Cumque, repellendus in?
+            Fugiat vitae totam velit voluptate veniam soluta accusantium aperiam hic inventore, at quisquam, aut maxime
+            corrupti, error magni obcaecati maiores quibusdam eligendi exercitationem voluptatem quo? Natus nostrum aut
+            explicabo esse!
+            Esse, est sed nemo, amet deserunt reiciendis ipsam sequi inventore quisquam impedit tempore optio officiis
+            minus soluta exercitationem distinctio voluptatibus qui aliquam doloribus dolorem quae repellat ullam!
+            Labore, sunt dolorem.
+            Omnis odit maxime eligendi expedita qui animi quos delectus ipsa laboriosam sequi aut veritatis, assumenda
+            natus praesentium et enim sed totam magni. Error id voluptas magnam commodi veritatis omnis! Voluptatibus!
+            Quibusdam, doloribus dicta deserunt aliquam incidunt iure soluta, et animi optio vitae qui enim, sit
+            obcaecati ea? Aspernatur, officia at. Ipsa culpa voluptates est corporis tempore quis optio at cumque!
+            A facilis adipisci, sapiente possimus magni repellendus temporibus ea, consequuntur sed accusantium ad alias
+            deserunt illum, dolor voluptatibus culpa ullam error ipsa. Necessitatibus, non libero voluptate omnis porro
+            tenetur velit.
+        </span>
+    </div>
+</body>
+
+</html>

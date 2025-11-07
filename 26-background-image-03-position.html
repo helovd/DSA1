@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image - 03</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        span {
+            font-size: 2em;
+            border: 1px red solid;
+            background-color: aqua;
+            padding: 15px;
+        }
+
+        body {
+            background-color: rgba(255, 166, 0, 0.5);
+            background-image: url(https://cdn.pixabay.com/photo/2015/11/05/08/21/geometry-1023846_1280.jpg);
+            background-repeat: no-repeat;
+
+            /* Top */
+            /* background-position: 50% 50%; */
+            /* background-position: left top; */
+            /* background-position: center top; */
+            /* background-position: right top; */
+
+            /* Center */
+            /* background-position: left center; */
+            background-position: center center;
+            /* background-position: right center ; */
+
+            /* Bottton */
+            /* background-position: left bottom; */
+            /* background-position: center bottom; */
+            /* background-position: right bottom; */
+
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <span>Exemplo de Background-Position</span>
+    </div>
+</body>
+
+</html>

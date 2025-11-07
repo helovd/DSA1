@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Align Content</title>
+
+    <style>
+        /* Centralizar o Container */
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            height: 300px;
+            width: 400px;
+            background-color: gainsboro;
+            /* align-content: flex-start; */
+            /* align-content: flex-end; */
+            /* align-content: center; */
+            /* align-content: stretch; */
+            /* align-content: space-between; */
+            align-content: space-around;
+        }
+
+        .item {
+            background-color: orange;
+            width: 100px;
+            height: 60px;
+            margin: 5px;
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+
+    <div class="container">
+
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+
+    </div>
+
+</body>
+
+</html>
